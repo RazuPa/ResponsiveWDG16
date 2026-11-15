@@ -277,10 +277,8 @@ textarea:focus-visible {
 .page--experience {
     background-color: #172333;
     background-image:
-        linear-gradient(
-            rgba(10, 22, 37, 0.45),
-            rgba(10, 22, 37, 0.65)
-        ),
+        linear-gradient(rgba(10, 22, 37, 0.45),
+            rgba(10, 22, 37, 0.65)),
         url("../images/GothamC.png");
     background-size: cover;
     background-position: center top;
@@ -328,8 +326,8 @@ textarea:focus-visible {
 }
 
 /* + väljer en post som ligger direkt efter en annan av samma slag. */
-.page--experience .experience__item + .experience__item,
-.page--experience .education__item + .education__item {
+.page--experience .experience__item+.experience__item,
+.page--experience .education__item+.education__item {
     border-top: 1px solid #74859b;
 }
 
@@ -384,10 +382,8 @@ textarea:focus-visible {
 .page--contact {
     background-color: #172333;
     background-image:
-        linear-gradient(
-            rgba(10, 22, 37, 0.45),
-            rgba(10, 22, 37, 0.65)
-        ),
+        linear-gradient(rgba(10, 22, 37, 0.45),
+            rgba(10, 22, 37, 0.65)),
         url("../images/GothamC.png");
     background-size: cover;
     background-position: center top;
@@ -529,6 +525,7 @@ textarea:focus-visible {
 
 /* Gäller när skärmen är högst 600 px bred. */
 @media (max-width: 600px) {
+
     /* Gemensamma anpassningar för alla sidor. */
     .site-header {
         position: static;
@@ -581,3 +578,16 @@ textarea:focus-visible {
         font-size: 28px;
     }
 }
+
+
+
+
+/* skills.html*/
+
+.skills-table {}
+
+.skills-table__caption {}
+
+.skills-table__heading {}
+
+.skills-table__cell {}
