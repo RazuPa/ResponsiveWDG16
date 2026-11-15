@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Batman's fictional professional experience, university education and specialized training.">
+    <meta
+        name="description"
+        content="Explore Batman's fictional professional experience, university education and specialized training."
+    >
     <meta name="author" content="Group 16">
+
     <title>Experience and Education | Batman Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
 <body class="page page--experience">
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
     <header class="site-header">
-        <p class="site-header__title">
-            Batman
-        </p>
+        <p class="site-header__title">Portfolio - Batman</p>
 
+        <!-- JS: Stäng menyn vid klick utanför eller Escape.
+             Vid Escape återgår fokus till menyknappen. -->
         <details class="menu" data-js-action="dismiss-menu">
             <summary
                 class="menu__toggle"
                 data-js-target="menu-toggle"
             >
                 <span aria-hidden="true">☰</span>
-                <span class="visually-hidden">Navigation Menu</span>
+                <span class="visually-hidden">Navigation menu</span>
             </summary>
 
             <nav
@@ -37,19 +45,16 @@
                             About Me
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="skills.html">
                             Skills
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="projects.html">
                             Projects
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a
                             class="menu__link menu__link--current"
@@ -59,19 +64,16 @@
                             Experience and Education
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="certifications.html">
                             Certifications
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="contact.html">
                             Contact
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="extra.html">
                             Extra
@@ -83,18 +85,15 @@
     </header>
 
     <main class="page__main" id="main-content" tabindex="-1">
-        <h1 class="page__title">
-            Experience and Education
-        </h1>
+        <h1 class="page__title">Experience and Education</h1>
 
         <p class="page__intro">
-            Discover Batman's professional background, education
-            and specialized training. This fictional profile
-            was created for a student project.
+            Discover Batman's professional background, education and
+            specialized training.
+            This fictional profile was created for a student project.
         </p>
 
-        <!-- Native disclosures work without JavaScript. -->
-
+        <!-- Öppnas och stängs med HTML. JavaScript behövs inte. -->
         <details class="resume-section" open>
             <summary class="resume-section__toggle">
                 <h2 class="resume-section__heading">
@@ -102,7 +101,8 @@
                 </h2>
             </summary>
 
-            <div class="resume-section__content">
+            <!-- experience är blocket som erfarenhetens delar tillhör. -->
+            <div class="resume-section__content experience">
                 <article class="experience__item">
                     <h3 class="experience__title">
                         Batman – Gotham City Protector
@@ -117,15 +117,12 @@
                         <li class="experience__list-item">
                             Criminal investigations and forensic analysis.
                         </li>
-
                         <li class="experience__list-item">
                             Strategic planning and crisis management.
                         </li>
-
                         <li class="experience__list-item">
                             Advanced technology development.
                         </li>
-
                         <li class="experience__list-item">
                             Collaboration with Commissioner Gordon
                             and the Justice League.
@@ -147,11 +144,9 @@
                         <li class="experience__list-item">
                             Business leadership and strategic investments.
                         </li>
-
                         <li class="experience__list-item">
                             Support for technological innovation.
                         </li>
-
                         <li class="experience__list-item">
                             Philanthropic initiatives and urban development.
                         </li>
@@ -171,32 +166,28 @@
 
                     <ul class="experience__list">
                         <li class="experience__list-item">
-                            1999–2000: Advanced technology
-                            and engineering development.
+                            1999–2000: Advanced technology and
+                            engineering development.
                         </li>
-
                         <li class="experience__list-item">
-                            2000–2001: Strategic planning
-                            and crisis management.
+                            2000–2001: Strategic planning and crisis management.
                         </li>
-
                         <li class="experience__list-item">
-                            2001–2002: Criminal investigation
-                            and forensic analysis.
+                            2001–2002: Criminal investigation and forensic analysis.
                         </li>
                     </ul>
                 </article>
             </div>
         </details>
 
+        <!-- Utbildningar visas som egna poster. -->
         <details class="resume-section" open>
             <summary class="resume-section__toggle">
-                <h2 class="resume-section__heading">
-                    Education
-                </h2>
+                <h2 class="resume-section__heading">Education</h2>
             </summary>
 
-            <div class="resume-section__content">
+            <!-- education är blocket som utbildningens delar tillhör. -->
+            <div class="resume-section__content education">
                 <article class="education__item">
                     <h3 class="education__title">
                         Ph.D. in Criminology and Forensic Science
@@ -250,14 +241,13 @@
             </div>
         </details>
 
+        <!-- Träning använder samma struktur som utbildning. -->
         <details class="resume-section" open>
             <summary class="resume-section__toggle">
-                <h2 class="resume-section__heading">
-                    Training
-                </h2>
+                <h2 class="resume-section__heading">Training</h2>
             </summary>
 
-            <div class="resume-section__content">
+            <div class="resume-section__content education">
                 <article class="education__item">
                     <h3 class="education__title">
                         Advanced Martial Arts and Tactical Warfare
@@ -273,11 +263,9 @@
                         <li class="education__list-item">
                             Martial arts and defensive combat training.
                         </li>
-
                         <li class="education__list-item">
                             Tactical warfare and survival techniques.
                         </li>
-
                         <li class="education__list-item">
                             Training associated with the League of Shadows.
                         </li>

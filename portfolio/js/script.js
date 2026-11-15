@@ -1,7 +1,6 @@
 "use strict";
 
-/* Shared: dismiss navigation */
-
+/* Hitta menyerna via deras JS-krok. */
 const navigationMenus = document.querySelectorAll(
     '[data-js-action="dismiss-menu"]'
 );
@@ -15,10 +14,12 @@ navigationMenus.forEach((menu) => {
         '[data-js-target="menu-panel"]'
     );
 
+    /* Hoppa över menyn om någon del saknas. */
     if (!toggle || !panel) {
         return;
     }
 
+    /* Stäng menyn när besökaren klickar utanför den. */
     document.addEventListener("click", (event) => {
         const clickedToggle = toggle.contains(event.target);
         const clickedPanel = panel.contains(event.target);
@@ -28,6 +29,7 @@ navigationMenus.forEach((menu) => {
         }
     });
 
+    /* Escape stänger menyn och återför fokus till knappen. */
     menu.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && menu.open) {
             menu.open = false;
@@ -36,9 +38,7 @@ navigationMenus.forEach((menu) => {
     });
 });
 
-
-/* contact.html: message character counter */
-
+/* Hitta meddelandefältet och platsen där antalet ska visas. */
 const messageInput = document.querySelector(
     '[data-js-action="update-character-count"]'
 );
@@ -47,6 +47,7 @@ const messageCount = document.querySelector(
     '[data-js-target="message-count"]'
 );
 
+/* Kör bara räknaren på sidor där båda delarna finns. */
 if (messageInput && messageCount) {
     const characterLimit = Number(messageInput.dataset.limit);
 
@@ -57,7 +58,9 @@ if (messageInput && messageCount) {
             `${currentLength} / ${characterLimit} characters`;
     }
 
+    /* Uppdatera när besökaren skriver. */
     messageInput.addEventListener("input", updateCharacterCount);
 
+    /* Visa rätt antal redan när sidan öppnas. */
     updateCharacterCount();
 }
