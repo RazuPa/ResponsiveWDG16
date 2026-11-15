@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta
         name="description"
         content="View Batman's fictional contact details and try the student portfolio contact form."
     >
+    <meta name="author" content="Group 16">
 
     <title>Contact | Batman Portfolio</title>
 
@@ -21,11 +21,10 @@
     </a>
 
     <header class="site-header">
-        <p class="site-header__title">
-            Batman
-        </p>
+        <p class="site-header__title">Portfolio - Batman</p>
 
-        <!-- Menyn öppnas och stängs när man trycker på hamburgersymbolen. -->
+        <!-- JS: Stäng menyn vid klick utanför eller Escape.
+             Vid Escape återgår fokus till menyknappen. -->
         <details class="menu" data-js-action="dismiss-menu">
             <summary
                 class="menu__toggle"
@@ -35,7 +34,6 @@
                 <span class="visually-hidden">Navigation menu</span>
             </summary>
 
-            <!-- Länkar till de andra sidorna. -->
             <nav
                 class="menu__nav"
                 aria-label="Main navigation"
@@ -47,31 +45,26 @@
                             About Me
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="skills.html">
                             Skills
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="projects.html">
                             Projects
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="experience.html">
                             Experience and Education
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="certifications.html">
                             Certifications
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a
                             class="menu__link menu__link--current"
@@ -81,7 +74,6 @@
                             Contact
                         </a>
                     </li>
-
                     <li class="menu__item">
                         <a class="menu__link" href="extra.html">
                             Extra
@@ -144,7 +136,7 @@
                 All fields and the priority selection are required.
             </p>
 
-            <!-- Här fyller besökaren i sitt meddelande. -->
+            <!-- Formuläret skickar uppgifterna till tack.php med POST. -->
             <form
                 class="contact__form"
                 action="tack.php"
@@ -206,7 +198,7 @@
                     </select>
                 </div>
 
-                <!-- Besökaren väljer om meddelandet är normalt eller brådskande. -->
+                <!-- Besökaren väljer meddelandets prioritet. -->
                 <fieldset class="contact__options">
                     <legend class="contact__legend">
                         Message priority
@@ -253,7 +245,7 @@
                     </div>
                 </fieldset>
 
-                <!-- Här skriver besökaren själva meddelandet. -->
+                <!-- Besökaren skriver sitt meddelande. -->
                 <div class="contact__field">
                     <label class="contact__label" for="contact-message">
                         Your message
@@ -264,6 +256,9 @@
                         Do not include sensitive personal information.
                     </p>
 
+                    <!-- JS: Räkna tecken medan besökaren skriver.
+                         DATA: gränsen i data-limit.
+                         TARGET: visa antalet i message-count. -->
                     <textarea
                         class="contact__input contact__input--message"
                         id="contact-message"
@@ -276,14 +271,13 @@
                         required
                     ></textarea>
 
-                    <!-- Visar hur många tecken besökaren har skrivit. -->
                     <p
                         class="contact__counter"
                         data-js-target="message-count"
                     ></p>
                 </div>
 
-                <!-- Skickar formuläret till tack.php. -->
+                <!-- Skickar formuläret när obligatoriska fält är ifyllda. -->
                 <button class="contact__submit" type="submit">
                     Submit Message
                 </button>
@@ -299,4 +293,3 @@
     </footer>
 </body>
 </html>
-```

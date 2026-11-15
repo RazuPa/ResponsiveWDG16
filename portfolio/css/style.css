@@ -55,7 +55,7 @@ a {
     overflow-wrap: anywhere;
 }
 
-/* Tydlig markering när besökaren navigerar med tangentbordet. */
+/* Visar var besökaren är vid tangentbordsnavigering. */
 a:focus-visible,
 summary:focus-visible,
 button:focus-visible,
@@ -66,7 +66,7 @@ textarea:focus-visible {
     outline-offset: 4px;
 }
 
-/* Texten syns inte men kan fortfarande läsas av skärmläsare. */
+/* Dold text som fortfarande kan läsas av skärmläsare. */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -79,7 +79,7 @@ textarea:focus-visible {
     border: 0;
 }
 
-/* Hopplänken visas när besökaren når den med tangentbordet. */
+/* Hopplänken visas när den får tangentbordsfokus. */
 .skip-link {
     position: absolute;
     top: -150px;
@@ -98,7 +98,7 @@ textarea:focus-visible {
     top: 15px;
 }
 
-/* Gemensam header för alla sidor. */
+/* Gemensam header. */
 .site-header {
     position: sticky;
     top: 0;
@@ -128,7 +128,7 @@ textarea:focus-visible {
     text-align: center;
 }
 
-/* Gemensam meny för alla sidor. */
+/* Gemensam meny. */
 .menu {
     position: relative;
     width: 100%;
@@ -154,7 +154,7 @@ textarea:focus-visible {
     list-style: none;
 }
 
-/* Tar bort standardpilen så att bara hamburgersymbolen visas. */
+/* Tar bort webbläsarens standardpil. */
 .menu__toggle::-webkit-details-marker {
     display: none;
 }
@@ -166,7 +166,7 @@ textarea:focus-visible {
     color: #202936;
 }
 
-/* Menyrutan ligger under knappen och kan rullas vid behov. */
+/* Menyrutan visas under knappen och kan rullas vid behov. */
 .menu__nav {
     position: absolute;
     top: 100%;
@@ -184,7 +184,7 @@ textarea:focus-visible {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Länkarna placeras under varandra utan listpunkter. */
+/* Placerar menylänkarna under varandra. */
 .menu__list {
     display: flex;
     flex-direction: column;
@@ -215,7 +215,7 @@ textarea:focus-visible {
     background-color: #354b64;
 }
 
-/* Används på länken till den aktuella sidan. */
+/* Markerar aktuell sida eller del av webbplatsen. */
 .menu__link--current {
     background-color: #dec9a7;
     color: #202936;
@@ -253,7 +253,7 @@ textarea:focus-visible {
     color: #e0e6ee;
 }
 
-/* Gemensam footer för alla sidor. */
+/* Gemensam footer. */
 .site-footer {
     flex-shrink: 0;
     margin-top: auto;
@@ -271,26 +271,27 @@ textarea:focus-visible {
 
 
 /* EXPERIENCE
-   Reglerna gäller bara på sidan med body-klassen page--experience. */
+   Dessa regler gäller bara på Experience-sidan. */
 
-/* Mörk ton över bakgrundsbilden gör texten lättare att läsa. */
+/* Mörk ton över bakgrundsbilden. */
 .page--experience {
     background-color: #172333;
     background-image:
-        linear-gradient(rgba(10, 22, 37, 0.45),
-            rgba(10, 22, 37, 0.65)),
-        url("../images/GothamC.png");
+        linear-gradient(
+            rgba(10, 22, 37, 0.45),
+            rgba(10, 22, 37, 0.65)
+        ),
+        url("../images/gothamc.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
-/* Mellanrum mellan delarna som kan öppnas och stängas. */
+/* Delar som besökaren kan öppna och stänga. */
 .page--experience .resume-section {
     margin-bottom: 22px;
 }
 
-/* Rubrikrutan som besökaren trycker på för att visa innehållet. */
 .page--experience .resume-section__toggle {
     display: list-item;
     padding: 16px 12px;
@@ -314,20 +315,19 @@ textarea:focus-visible {
     line-height: 1.4;
 }
 
-/* Luft runt innehållet i den öppnade delen. */
 .page--experience .resume-section__content {
     padding: 5px 12px 15px;
 }
 
-/* Varje erfarenhet och utbildning får samma mellanrum. */
+/* Mellanrum runt varje erfarenhet och utbildning. */
 .page--experience .experience__item,
 .page--experience .education__item {
     padding: 26px 0;
 }
 
-/* + väljer en post som ligger direkt efter en annan av samma slag. */
-.page--experience .experience__item+.experience__item,
-.page--experience .education__item+.education__item {
+/* Linje mellan poster som ligger direkt efter varandra. */
+.page--experience .experience__item + .experience__item,
+.page--experience .education__item + .education__item {
     border-top: 1px solid #74859b;
 }
 
@@ -341,15 +341,15 @@ textarea:focus-visible {
     line-height: 1.4;
 }
 
-/* Datum visas under respektive rubrik. */
+/* Datum under respektive rubrik. */
 .page--experience .experience__date,
 .page--experience .education__date {
     margin: 0 0 16px;
     color: #f3dcad;
-    font-size: 20px;
+    font-size: 14px;
 }
 
-/* Listor med beskrivningar av erfarenheter och utbildningar. */
+/* Listor som beskriver erfarenheter och utbildningar. */
 .page--experience .experience__list,
 .page--experience .education__list {
     max-width: 650px;
@@ -363,7 +363,7 @@ textarea:focus-visible {
     margin-bottom: 7px;
 }
 
-/* Ändrar färgen på själva listpunkterna. */
+/* Färg på själva listpunkterna. */
 .page--experience .experience__list-item::marker,
 .page--experience .education__list-item::marker {
     color: #f3dcad;
@@ -377,18 +377,7 @@ textarea:focus-visible {
 
 
 /* CONTACT
-   Reglerna gäller bara på sidan med body-klassen page--contact. */
-
-.page--contact {
-    background-color: #172333;
-    background-image:
-        linear-gradient(rgba(10, 22, 37, 0.45),
-            rgba(10, 22, 37, 0.65)),
-        url("../images/GothamC.png");
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
+   Dessa regler gäller på Contact och dess PHP-svar. */
 
 /* Mellanrum mellan kontaktuppgifterna och formuläret. */
 .page--contact .contact {
@@ -403,7 +392,7 @@ textarea:focus-visible {
     font-size: 22px;
 }
 
-/* Tar bort den kursiva text som address normalt får. */
+/* Tar bort kursiv text på kontaktuppgifterna. */
 .page--contact .contact__details {
     font-style: normal;
 }
@@ -418,19 +407,18 @@ textarea:focus-visible {
     color: #f3dcad;
 }
 
-/* Mindre text för information och hjälp vid formuläret. */
+/* Mindre text för information och hjälp. */
 .page--contact .contact__note,
 .page--contact .contact__help {
     color: #e0e6ee;
     font-size: 14px;
 }
 
-/* Formuläret blir inte bredare än 650 px. */
+/* Formulärets bredd och mellanrum mellan fälten. */
 .page--contact .contact__form {
     max-width: 650px;
 }
 
-/* Mellanrum mellan grupperna med etikett och fält. */
 .page--contact .contact__field {
     margin-bottom: 22px;
 }
@@ -442,7 +430,7 @@ textarea:focus-visible {
     font-weight: 600;
 }
 
-/* Samma utseende för textfält, rullista och meddelandefält. */
+/* Gemensamt utseende för formulärets fält. */
 .page--contact .contact__input {
     display: block;
     width: 100%;
@@ -454,7 +442,7 @@ textarea:focus-visible {
     border-radius: 6px;
 }
 
-/* Meddelandefältet kan göras högre, men inte bredare. */
+/* Besökaren kan ändra meddelandefältets höjd. */
 .page--contact .contact__input--message {
     resize: vertical;
 }
@@ -463,7 +451,7 @@ textarea:focus-visible {
     margin: 0 0 10px;
 }
 
-/* JavaScript fyller denna text med antalet skrivna tecken. */
+/* Visar antalet tecken som JavaScript räknar. */
 .page--contact .contact__counter {
     margin: 8px 0 0;
     color: #e0e6ee;
@@ -479,13 +467,12 @@ textarea:focus-visible {
     border-radius: 6px;
 }
 
-/* Rubriken i ramen runt prioritetsvalen. */
 .page--contact .contact__legend {
     padding: 0 6px;
     font-weight: 600;
 }
 
-/* Radioknappen och dess text placeras bredvid varandra. */
+/* Radioknappen och texten placeras bredvid varandra. */
 .page--contact .contact__option {
     display: flex;
     align-items: center;
@@ -500,7 +487,6 @@ textarea:focus-visible {
     accent-color: #dec9a7;
 }
 
-/* Texten kan också klickas för att välja radioknappen. */
 .page--contact .contact__option-label {
     padding: 10px 0;
     cursor: pointer;
@@ -522,10 +508,28 @@ textarea:focus-visible {
     background-color: #ecdbbf;
 }
 
+/* Felmeddelanden från PHP-sidan. */
+.page--contact .contact__errors {
+    padding-left: 22px;
+}
 
-/* Gäller när skärmen är högst 600 px bred. */
+.page--contact .contact__error {
+    margin-bottom: 7px;
+}
+
+/* Uppgifterna som visas efter att formuläret skickats. */
+.page--contact .contact__response {
+    margin: 0;
+}
+
+/* Behåller radbrytningar i det inskickade meddelandet. */
+.page--contact .contact__text--message {
+    white-space: pre-wrap;
+}
+
+
+/* Anpassningar när skärmen är högst 600 px bred. */
 @media (max-width: 600px) {
-
     /* Gemensamma anpassningar för alla sidor. */
     .site-header {
         position: static;
@@ -550,7 +554,7 @@ textarea:focus-visible {
         margin-bottom: 30px;
     }
 
-    /* Dessa mindre rubriker gäller bara på Experience. */
+    /* Mindre rubriker bara på Experience-sidan. */
     .page--experience .resume-section__heading {
         font-size: 20px;
     }
@@ -561,7 +565,7 @@ textarea:focus-visible {
     }
 }
 
-/* Gemensamma anpassningar när skärmen är högst 400 px bred. */
+/* Gemensamma anpassningar för extra smala skärmar. */
 @media (max-width: 400px) {
     .site-header__title {
         position: static;
@@ -578,16 +582,3 @@ textarea:focus-visible {
         font-size: 28px;
     }
 }
-
-
-
-
-/* skills.html*/
-
-.skills-table {}
-
-.skills-table__caption {}
-
-.skills-table__heading {}
-
-.skills-table__cell {}
