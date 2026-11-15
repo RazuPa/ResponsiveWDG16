@@ -7,24 +7,51 @@
     <meta name="description"
         content="Explore Batman's technical, professional, and physical skills and his cybersecurity, detective work, martial arts, and advanced engineering skills.">
     <meta name="keywords" content="Portfolio, Responsive Web Design, HTML, CSS, JavaScript">
-    <meta name="author" content="Grupp16"> /* hover over name on this */
+    <meta name="author" content="Grupp16">
     <title>Batman's Skills</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 
-<body>
+<body class="page page--skills">
 
-    <header>
-        <nav>
-            <a href="index.html">About me</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="experience.html">Experience</a>
-            <a href="contact.html">Contact</a>
-            <a href="extra.html">Extra</a>
-        </nav>
+    <header class="site-header">
+        <p class="site-header__title">Batman</p>
+        <details class="menu" data-js-action="dismiss-menu">
+            <summary class="menu__toggle" data-js-target="menu-toggle">
+                <span aria-hidden="true">☰</span>
+                <span class="visually-hidden">Navigation Menu</span>
+            </summary>
+            <nav class="menu__nav" aria-label="Main navigation" data-js-target="menu-panel">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">About me</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--current" aria-current="page" href="skills.html">Skills</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="experience.html">Experience and Education</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="extra.html">Extra</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </details>
+
     </header>
+
 
     <main>
 
@@ -83,6 +110,12 @@
 
 
     </main>
+    <footer class="site-footer">
+        <p class="site-footer__text">
+            &copy; 2026 Group 16.
+            Fictional student portfolio for Responsive Web Design.
+        </p>
+    </footer>
 </body>
 
 </html>
