@@ -1,29 +1,304 @@
+```html
 <!DOCTYPE html>
-<html lang="sv">
- <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio för Responsive Web Design 16">
-    <meta name="keywords" content="Portfolio, Responsive Web Design, HTML, CSS, JavaScript">
-    <meta name="author" content="Grupp16">
-    <title>Portfolio - Responsive Web Design 16</title>
+
+    <meta
+        name="description"
+        content="View Batman's fictional contact details and try the student portfolio contact form."
+    >
+    <meta name="author" content="Group 16">
+
+    <title>Contact | Batman portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
- </head>
+    <script src="js/script.js" defer></script>
+</head>
 
+<body class="page page--contact">
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-</html>
+    <header class="site-header">
+        <p class="site-header__title">
+            Portfolio
+        </p>
 
-<body>
-    <main>
-        <h1>Portfolio / Responsive Web Design 16</h1>
-        <nav> 
-            <a href="index.html">Om mig</a>
-            <a href="skills.html">Kompetenser</a>
-            <a href="projects.html">Projekt</a>
-            <a href="experience.html">Utbildning/erfarenhet</a>
-            <a href="contact.html">Kontakt</a>
-            <a href="extra.html">Valfri sida</a>
-        </nav>
+        <!-- Menyn öppnas och stängs när man trycker på hamburgersymbolen. -->
+        <details class="menu" data-js-action="dismiss-menu">
+            <summary
+                class="menu__toggle"
+                data-js-target="menu-toggle"
+            >
+                <span aria-hidden="true">☰</span>
+                <span class="visually-hidden">Navigation menu</span>
+            </summary>
+
+            <!-- Länkar till de andra sidorna. -->
+            <nav
+                class="menu__nav"
+                aria-label="Main navigation"
+                data-js-target="menu-panel"
+            >
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">
+                            About Me
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="skills.html">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="experience.html">
+                            Experience and Education
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="certifications.html">
+                            Certifications
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a
+                            class="menu__link menu__link--current"
+                            href="contact.html"
+                            aria-current="page"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a class="menu__link" href="extra.html">
+                            Extra
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </details>
+    </header>
+
+    <main class="page__main" id="main-content" tabindex="-1">
+        <h1 class="page__title">Contact Batman</h1>
+
+        <p class="page__intro">
+            Have a question or a project idea?
+            Explore the contact details or complete the form below.
+        </p>
+
+        <!-- Här visas Batmans kontaktuppgifter. -->
+        <section class="contact" aria-labelledby="contact-details-title">
+            <h2 class="contact__heading" id="contact-details-title">
+                Contact Details
+            </h2>
+
+            <address class="contact__details">
+                <p class="contact__text">
+                    Email:
+                    <a
+                        class="contact__link"
+                        href="mailto:batman@example.com"
+                    >
+                        batman@example.com
+                    </a>
+                    (fictional)
+                </p>
+
+                <p class="contact__text">
+                    Based in Gotham City.
+                </p>
+            </address>
+
+            <p class="contact__note">
+                This is a fictional student portfolio.
+                The email address is an example and is not monitored.
+            </p>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-form-title">
+            <h2 class="contact__heading" id="contact-form-title">
+                Send a Message
+            </h2>
+
+            <p class="contact__text" id="contact-form-help">
+                This demonstration form submits your entries to a
+                confirmation page. It does not send an email.
+                Use fictional information.
+            </p>
+
+            <p class="contact__text">
+                All fields and the priority selection are required.
+            </p>
+
+            <!-- Här fyller besökaren i sitt meddelande. -->
+            <form
+                class="contact__form"
+                action="tack.php"
+                method="post"
+                aria-labelledby="contact-form-title"
+                aria-describedby="contact-form-help"
+            >
+                <!-- Besökaren skriver sitt namn. -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contact-name">
+                        Full name
+                    </label>
+
+                    <input
+                        class="contact__input"
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        autocomplete="name"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <!-- Besökaren skriver sin e-postadress. -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contact-email">
+                        Email address
+                    </label>
+
+                    <input
+                        class="contact__input"
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        autocomplete="email"
+                        maxlength="254"
+                        required
+                    >
+                </div>
+
+                <!-- Besökaren väljer varför den vill ta kontakt. -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contact-reason">
+                        Reason for contact
+                    </label>
+
+                    <select
+                        class="contact__input"
+                        id="contact-reason"
+                        name="reason"
+                        required
+                    >
+                        <option value="">Select a reason</option>
+                        <option value="investigation">Investigation</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="technology">Technology</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Besökaren väljer om meddelandet är normalt eller brådskande. -->
+                <fieldset class="contact__options">
+                    <legend class="contact__legend">
+                        Message priority
+                    </legend>
+
+                    <p class="contact__help">
+                        Select one priority.
+                    </p>
+
+                    <div class="contact__option">
+                        <input
+                            class="contact__radio"
+                            type="radio"
+                            id="contact-priority-normal"
+                            name="priority"
+                            value="normal"
+                            required
+                        >
+
+                        <label
+                            class="contact__option-label"
+                            for="contact-priority-normal"
+                        >
+                            Normal
+                        </label>
+                    </div>
+
+                    <div class="contact__option">
+                        <input
+                            class="contact__radio"
+                            type="radio"
+                            id="contact-priority-urgent"
+                            name="priority"
+                            value="urgent"
+                            required
+                        >
+
+                        <label
+                            class="contact__option-label"
+                            for="contact-priority-urgent"
+                        >
+                            Urgent
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Här skriver besökaren själva meddelandet. -->
+                <div class="contact__field">
+                    <label class="contact__label" for="contact-message">
+                        Your message
+                    </label>
+
+                    <p class="contact__help" id="contact-message-help">
+                        Maximum 2,000 characters.
+                        Do not include sensitive personal information.
+                    </p>
+
+                    <textarea
+                        class="contact__input contact__input--message"
+                        id="contact-message"
+                        name="message"
+                        rows="7"
+                        maxlength="2000"
+                        aria-describedby="contact-message-help"
+                        data-js-action="update-character-count"
+                        data-limit="2000"
+                        required
+                    ></textarea>
+
+                    <!-- Visar hur många tecken besökaren har skrivit. -->
+                    <p
+                        class="contact__counter"
+                        data-js-target="message-count"
+                    ></p>
+                </div>
+
+                <!-- Skickar formuläret till tack.php. -->
+                <button class="contact__submit" type="submit">
+                    Submit Message
+                </button>
+            </form>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">
+            &copy; 2026 Group 16.
+            Fictional student portfolio for Responsive Web Design.
+        </p>
+    </footer>
 </body>
+</html>
+```
