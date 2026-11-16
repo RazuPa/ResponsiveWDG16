@@ -565,6 +565,34 @@ textarea:focus-visible {
     }
 }
 
+/* Reglarna gäller endast skills.html*/
+.skills-table {
+    width:100%;
+    border-collapse;
+    collapse;
+}
+
+.skills-table__caption {
+    color:#f3dcad;
+    padding: 12px;
+    
+
+}
+
+.skills-table__heading {
+    border: 1px solid #74859b;
+    padding: 12px;
+    text-align:left
+
+
+}
+
+.skills-table__cell {
+    border:1px solid #74859b;
+    padding: 12px;
+}
+
+
 /* Gemensamma anpassningar för extra smala skärmar. */
 @media (max-width: 400px) {
     .site-header__title {
