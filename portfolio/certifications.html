@@ -1,32 +1,75 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 
- <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio för Responsive Web Design 16">
+    <meta name="description" content="Expolre Batman's certifications">
     <meta name="keywords" content="Portfolio, Responsive Web Design, HTML, CSS, JavaScript">
     <meta name="author" content="Grupp16">
-    <title>Portfolio - Responsive Web Design 16</title>
+    <title>Certifications</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
- </head>
+</head>
 
 
-</html>
+
 
 <body>
+
+
     <main>
-        <h1>Portfolio / Responsive Web Design 16</h1>
-        <nav> 
-            <a href="index.html">Om mig</a>
-            <a href="skills.html">Kompetenser</a>
-            <a href="projects.html">Projekt</a>
-            <a href="experience.html">Utbildning/erfarenhet</a>
-            <a href="contact.html">Kontakt</a>
-            <a href="extra.html">Valfri sida</a>
-        </nav>
+        <header class="site-header">
+            <p class="site-header__title">Batman</p>
+            <details class="menu" data-js-action="dismiss-menu">
+                <summary class="menu__toggle" data-js-target="menu-toggle">
+                    <span aria-hidden="true">☰</span>
+                    <span class="visually-hidden">Navigation Menu</span>
+                </summary>
+                <nav class="menu__nav" aria-label="Main navigation" data-js-target="menu-panel">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="index.html">About me</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="experience.html">Experience and Education</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--current" aria-current="page"
+                                href="certifications.html">Certifications</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="extra.html">Extra</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </details>
+
+        </header>
+
+
+
+
+
+
     </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">
+            &copy; 2026 Group 16.
+            Fictional student portfolio for Responsive Web Design.
+        </p>
+    </footer>
 </body>
 
 </html>
