@@ -592,6 +592,39 @@ textarea:focus-visible {
     padding: 12px;
 }
 
+/* Reglerna gäller för endast certifications.html*/
+.certifications__heading {
+    color: #f3dcad;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.certifications__title {
+    color:#f3dcad;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 8px;
+
+}
+
+.certifications__description {
+    color: #e0e6ee;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-bottom:25px;
+
+}
+
+.certifications {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
 
 /* Gemensamma anpassningar för extra smala skärmar. */
 @media (max-width: 400px) {
