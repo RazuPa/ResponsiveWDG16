@@ -568,8 +568,8 @@ textarea:focus-visible {
 /* Reglarna gäller endast skills.html*/
 .skills-table {
     width:100%;
-    border-collapse;
-    collapse;
+    border-collapse:
+    collapse
 }
 
 .skills-table__caption {
