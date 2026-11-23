@@ -552,6 +552,16 @@ textarea:focus-visible {
 
 }
 
+.resume-section__toggle__projects {
+    padding: 15px;
+    background-color: #263b52;
+    color: #f3dcad;
+    border: 1px solid #74859b;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom:20px;
+}
+
 .menu__list__Projects {
     padding: 0;
     list-style: none;
