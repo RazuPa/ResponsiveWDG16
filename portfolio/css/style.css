@@ -1,33 +1,32 @@
-
 /* =========================================
    GEMENSAM DESIGN
    ========================================= */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #172333;
-    color: #f4f6fa;
-    font-family: Arial, sans-serif;
-    line-height: 1.7;
+  margin: 0;
+  background-color: #172333;
+  color: #f4f6fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
 }
 
 .page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    color: #f3dcad;
+  color: #f3dcad;
 }
 
 a:focus-visible,
@@ -36,176 +35,171 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-    outline: 3px solid #f3dcad;
+  outline: 3px solid #f3dcad;
 }
 
 /* Text för skärmläsare */
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
 }
 
 /* Hoppa till huvudinnehållet */
 
 .skip-link {
-    position: absolute;
-    top: -100px;
-    left: 10px;
-    padding: 10px;
-    background-color: #dec9a7;
-    color: #172333;
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  padding: 10px;
+  background-color: #dec9a7;
+  color: #172333;
 }
 
 .skip-link:focus {
-    top: 10px;
-    z-index: 30;
+  top: 10px;
+  z-index: 30;
 }
-
 
 /* =========================================
    HEADER
    ========================================= */
 
 .site-header {
-    padding: 20px;
-    background-color: #0f1d2f;
-    border-bottom: 1px solid #74859b;
+  padding: 20px;
+  background-color: #0f1d2f;
+  border-bottom: 1px solid #74859b;
 }
 
 .site-header__title {
-    margin: 0 0 15px;
-    color: #fff7e8;
-    font-family: Georgia, serif;
-    font-size: 28px;
-    text-align: center;
+  margin: 0 0 15px;
+  color: #fff7e8;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  text-align: center;
 }
-
 
 /* =========================================
    NAVIGATION
    ========================================= */
 
 .menu {
-    position: relative;
+  position: relative;
 }
 
 .menu__toggle {
-    width: 60px;
-    padding: 8px;
-    background-color: #263b52;
-    color: #f3dcad;
-    border: 1px solid #dec9a7;
-    border-radius: 8px;
-    font-size: 30px;
-    text-align: center;
-    cursor: pointer;
-    list-style: none;
+  width: 60px;
+  padding: 8px;
+  background-color: #263b52;
+  color: #f3dcad;
+  border: 1px solid #dec9a7;
+  border-radius: 8px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
 }
 
 .menu__toggle::-webkit-details-marker {
-    display: none;
+  display: none;
 }
 
 .menu__nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 20;
-    width: 280px;
-    max-width: 100%;
-    max-height: 60vh;
-    overflow-y: auto;
-    padding: 10px;
-    background-color: #0f1d2f;
-    border: 1px solid #74859b;
-    border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  width: 280px;
+  max-width: 100%;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #0f1d2f;
+  border: 1px solid #74859b;
+  border-radius: 8px;
 }
 
 .menu__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .menu__item {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .menu__link {
-    display: block;
-    padding: 10px;
-    color: #f4f6fa;
-    text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #f4f6fa;
+  text-decoration: none;
 }
 
 .menu__link:hover {
-    background-color: #354b64;
+  background-color: #354b64;
 }
 
 .menu__link--current {
-    background-color: #dec9a7;
-    color: #172333;
+  background-color: #dec9a7;
+  color: #172333;
 }
-
 
 /* =========================================
    HUVUDINNEHÅLL
    ========================================= */
 
 .page__main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #0f1d2f;
-    border: 1px solid #74859b;
-    border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #0f1d2f;
+  border: 1px solid #74859b;
+  border-radius: 10px;
 }
 
 .page__title {
-    margin-top: 0;
-    color: #fff7e8;
-    font-family: Georgia, serif;
-    font-size: 36px;
+  margin-top: 0;
+  color: #fff7e8;
+  font-family: Georgia, serif;
+  font-size: 36px;
 }
 
 .page__intro {
-    color: #e0e6ee;
+  color: #e0e6ee;
 }
-
 
 /* =========================================
    FOOTER
    ========================================= */
 
 .site-footer {
-    margin-top: auto;
-    padding: 20px;
-    background-color: #0f1d2f;
-    border-top: 1px solid #74859b;
-    text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  background-color: #0f1d2f;
+  border-top: 1px solid #74859b;
+  text-align: center;
 }
 
 .site-footer__text {
-    margin: 5px 0;
-    color: #e0e6ee;
-    font-size: 14px;
+  margin: 5px 0;
+  color: #e0e6ee;
+  font-size: 14px;
 }
-
 
 /* =========================================
    INDEX – ABOUT BATMAN
    ========================================= */
 
 .page--home {
-    background-image: url("../images/gothamc.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url("../images/gothamc.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Mellanrum mellan sektionerna */
@@ -215,23 +209,23 @@ textarea:focus-visible {
 .page--home .career,
 .page--home .goals,
 .page--home .portfolio-links {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 /* Rubriker */
 
 .about__title {
-    color: #fff7e8;
-    font-family: Georgia, serif;
-    font-size: 36px;
+  color: #fff7e8;
+  font-family: Georgia, serif;
+  font-size: 36px;
 }
 
 .profile__title,
 .career__title,
 .goals__title,
 .portfolio-links__title {
-    color: #f3dcad;
-    font-size: 22px;
+  color: #f3dcad;
+  font-size: 22px;
 }
 
 /* Text */
@@ -241,287 +235,282 @@ textarea:focus-visible {
 .career__intro,
 .goals__text,
 .portfolio-links__intro {
-    max-width: 650px;
-    color: #e0e6ee;
+  max-width: 650px;
+  color: #e0e6ee;
 }
 
 /* Batman-bild */
 
 .about__figure {
-    max-width: 400px;
-    margin: 25px auto;
+  max-width: 400px;
+  margin: 25px auto;
 }
 
 .about__image {
-    width: 100%;
-    border: 1px solid #74859b;
-    border-radius: 8px;
+  width: 100%;
+  border: 1px solid #74859b;
+  border-radius: 8px;
 }
 
 .about__caption {
-    margin-top: 10px;
-    color: #f3dcad;
-    text-align: center;
+  margin-top: 10px;
+  color: #f3dcad;
+  text-align: center;
 }
 
 /* Listor */
 
 .career__list,
 .portfolio-links__list {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .career__item,
 .portfolio-links__item {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio-links__link {
-    color: #f3dcad;
+  color: #f3dcad;
 }
-
 
 /* =========================================
    EXPERIENCE
    ========================================= */
 
 .page--experience {
-    background-image: url("../images/gothamc.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url("../images/gothamc.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .resume-section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .resume-section__toggle {
-    padding: 15px;
-    background-color: #263b52;
-    color: #f3dcad;
-    border: 1px solid #74859b;
-    border-radius: 6px;
-    cursor: pointer;
+  padding: 15px;
+  background-color: #263b52;
+  color: #f3dcad;
+  border: 1px solid #74859b;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .resume-section__heading {
-    display: inline;
-    font-size: 22px;
+  display: inline;
+  font-size: 22px;
 }
 
 .resume-section__content {
-    padding: 15px;
+  padding: 15px;
 }
 
 /* Experience och Education använder samma stil */
 
 .experience__item,
 .education__item {
-    padding: 20px 0;
-    border-bottom: 1px solid #74859b;
+  padding: 20px 0;
+  border-bottom: 1px solid #74859b;
 }
 
 .experience__title,
 .education__title {
-    color: #f4f6fa;
-    font-size: 20px;
+  color: #f4f6fa;
+  font-size: 20px;
 }
 
 .experience__date,
 .education__date {
-    color: #f3dcad;
-    font-size: 14px;
+  color: #f3dcad;
+  font-size: 14px;
 }
 
 .experience__list,
 .education__list {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .experience__list-item,
 .education__list-item {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .education__text {
-    color: #e0e6ee;
+  color: #e0e6ee;
 }
-
 
 /* =========================================
    CONTACT
    ========================================= */
 
 .contact {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .contact__heading {
-    color: #f3dcad;
-    font-size: 22px;
-    border-bottom: 1px solid #74859b;
+  color: #f3dcad;
+  font-size: 22px;
+  border-bottom: 1px solid #74859b;
 }
 
 .contact__details {
-    font-style: normal;
+  font-style: normal;
 }
 
 .contact__text,
 .contact__note,
 .contact__help {
-    color: #e0e6ee;
+  color: #e0e6ee;
 }
 
 .contact__link {
-    color: #f3dcad;
+  color: #f3dcad;
 }
 
 /* Formulär */
 
 .contact__form {
-    max-width: 650px;
+  max-width: 650px;
 }
 
 .contact__field {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact__label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .contact__input {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #152638;
-    color: #f4f6fa;
-    border: 1px solid #8797aa;
-    border-radius: 6px;
-    font: inherit;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #152638;
+  color: #f4f6fa;
+  border: 1px solid #8797aa;
+  border-radius: 6px;
+  font: inherit;
 }
 
 .contact__input--message {
-    resize: vertical;
+  resize: vertical;
 }
 
 .contact__counter,
 .contact__help,
 .contact__note {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* Radioknappar */
 
 .contact__options {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #8797aa;
-    border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #8797aa;
+  border-radius: 6px;
 }
 
 .contact__legend {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .contact__option {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .contact__radio {
-    accent-color: #dec9a7;
+  accent-color: #dec9a7;
 }
 
 .contact__option-label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Skicka-knapp */
 
 .contact__submit {
-    padding: 12px 24px;
-    background-color: #dec9a7;
-    color: #172333;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
+  padding: 12px 24px;
+  background-color: #dec9a7;
+  color: #172333;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .contact__submit:hover {
-    background-color: #ecdbbf;
+  background-color: #ecdbbf;
 }
 
 /* PHP-svar */
 
 .contact__errors {
-    color: #f4f6fa;
+  color: #f4f6fa;
 }
 
 .contact__error {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .contact__text--message {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
-
 
 /* =========================================
    SKILLS
    ========================================= */
 
 .skills-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .skills-table__caption {
-    padding: 12px;
-    color: #f3dcad;
+  padding: 12px;
+  color: #f3dcad;
 }
 
 .skills-table__heading,
 .skills-table__cell {
-    padding: 12px;
-    border: 1px solid #74859b;
-    text-align: left;
+  padding: 12px;
+  border: 1px solid #74859b;
+  text-align: left;
 }
-
 
 /* =========================================
    CERTIFICATIONS
    ========================================= */
 
 .certifications {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .certifications__heading,
 .certifications__title {
-    color: #f3dcad;
+  color: #f3dcad;
 }
 
 .certifications__heading {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .certifications__title {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .certifications__description {
-    max-width: 650px;
-    color: #e0e6ee;
+  max-width: 650px;
+  color: #e0e6ee;
 }
-
 
 /* =========================================
    PROJECTS / EXTRA
@@ -529,101 +518,98 @@ textarea:focus-visible {
    ========================================= */
 
 .menu__toggle__Projects {
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 900px;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(222, 201, 167, 0.14);
-    color: #f3dcad;
-    border: 1px solid #dec9a7;
-    border-radius: 10px;
-    font-size: 34px;
-    line-height: 1;
-    cursor: pointer;
-    list-style: none;
-     margin-top: 20px;
-    padding: 8px;
-    margin-bottom:20px;
-    max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(222, 201, 167, 0.14);
+  color: #f3dcad;
+  border: 1px solid #dec9a7;
+  border-radius: 10px;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  list-style: none;
+  margin-top: 20px;
+  padding: 8px;
+  margin-bottom: 20px;
+  max-width: 100%;
   height: auto;
-
 }
 
 .resume-section__toggle__projects {
-    padding: 15px;
-    background-color: #263b52;
-    color: #f3dcad;
-    border: 1px solid #74859b;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom:20px;
+  padding: 15px;
+  background-color: #263b52;
+  color: #f3dcad;
+  border: 1px solid #74859b;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .menu__list__Projects {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .menu__item__Projects {
-    width: 100%;
+  width: 100%;
 }
 
 .menu__nav__Projects {
-    max-width: 100%;
-    padding: 15px;
-    background-color: #0f1d2f;
-    border: 1px solid #74859b;
-    border-radius: 8px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: #0f1d2f;
+  border: 1px solid #74859b;
+  border-radius: 8px;
 }
 
 .label__Projects {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .img__Projects {
-    max-width: 100%;
-    height: auto;
-    object-fit:contain;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-
 
 /* =========================================
    MOBILANPASSNING
    ========================================= */
 
 @media (max-width: 600px) {
+  .site-header {
+    padding: 15px;
+  }
 
-    .site-header {
-        padding: 15px;
-    }
+  .site-header__title {
+    font-size: 24px;
+  }
 
-    .site-header__title {
-        font-size: 24px;
-    }
+  .page__main {
+    width: 95%;
+    padding: 20px;
+  }
 
-    .page__main {
-        width: 95%;
-        padding: 20px;
-    }
+  .page__title,
+  .about__title {
+    font-size: 28px;
+  }
 
-    .page__title,
-    .about__title {
-        font-size: 28px;
-    }
+  .about__figure {
+    max-width: 100%;
+  }
 
-    .about__figure {
-        max-width: 100%;
-    }
+  .resume-section__heading {
+    font-size: 20px;
+  }
 
-    .resume-section__heading {
-        font-size: 20px;
-    }
-
-    .experience__title,
-    .education__title {
-        font-size: 18px;
-    }
+  .experience__title,
+  .education__title {
+    font-size: 18px;
+  }
 }
