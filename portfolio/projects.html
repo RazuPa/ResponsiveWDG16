@@ -1,214 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Batman's fictional projects.">
-    <title>Projects | Batman Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body class="page page--experience">
-    <a class="skip-link" href="#main-content">
-            Skip to main content
-        </a>
-    
+    <meta
+      name="description"
+      content="Explore Batman's fictional projects, including the Batcomputer, Batmobile, Batsuit and Bat-Signal."
+    />
+
+    <title>Projects | Batman Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="page page--projects">
+    <!-- Skip navigation -->
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+
+    <!-- =====================================
+         HEADER
+         ===================================== -->
 
     <header class="site-header">
-        <p class="site-header__title">
-            Batman
-        </p>
+      <p class="site-header__title">Portfolio - Batman</p>
 
-        <details class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true">☰</span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+      <!-- JS: Close navigation on outside click
+             or Escape. Restore focus on Escape. -->
 
-            <nav
-                class="menu__nav"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">
-                            About Me
-                        </a>
-                    </li>
+      <details class="menu" data-js-action="dismiss-menu">
+        <summary class="menu__toggle" data-js-target="menu-toggle">
+          <span aria-hidden="true">☰</span>
+          <span class="visually-hidden"> Navigation menu </span>
+        </summary>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="skills.html">
-                            Skills
-                        </a>
-                    </li>
+        <nav
+          class="menu__nav"
+          aria-label="Main navigation"
+          data-js-target="menu-panel"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html"> About Me </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--current" href="projects.html"
-                        aria-current="page"
-                        >
-                            Projects
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="skills.html"> Skills </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a
-                            class="menu__link"
-                            href="experience.html"
-                            
-                        >
-                            Experience and Education
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--current"
+                href="projects.html"
+                aria-current="page"
+              >
+                Projects
+              </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="certifications.html">
-                            Certifications
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="experience.html">
+                Experience and Education
+              </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="contact.html">
-                            Contact
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="certifications.html">
+                Certifications
+              </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="extra.html">
-                            Extra
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html"> Contact </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="extra.html"> Extra </a>
+            </li>
+          </ul>
+        </nav>
+      </details>
     </header>
- 
-<main class="page__main" id="main-content">
 
-    <h1 class="page__title">Projects</h1>
+    <!-- =====================================
+         MAIN CONTENT
+         ===================================== -->
 
-        <p class="page__intro">
-            The Projects of the Batman
-        </p>
+    <main id="main-content" class="page__main" tabindex="-1">
+      <h1 class="page__title">Projects</h1>
 
-    <label ><a class="label__Projects">The Batcomputer</a></label>
-<details id="Batcomputer" name="Batcomputer" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/Batcomputer.jpg" alt="Batcomputer"></span>
-                <span class="visually-hidden">Navigation Menu</span>
+      <p class="page__intro">
+        Explore Batman's technology and equipment. These fictional projects
+        support his investigations, protection and emergency response
+        operations.
+      </p>
+
+      <!-- =================================
+             PROJECT COLLECTION
+             ================================= -->
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="projects__heading">
+          Featured Projects
+        </h2>
+
+        <!-- =============================
+                 PROJECT 1: BATCOMPUTER
+                 ============================= -->
+
+        <article class="project-card">
+          <h3 class="project-card__title">The Batcomputer</h3>
+
+          <!-- Native details interaction.
+                     No JavaScript is required. -->
+
+          <details class="project-card__details">
+            <summary class="project-card__toggle">
+              <img
+                class="project-card__image"
+                src="images/Batcomputer.jpg"
+                alt="The Batcomputer, Batman's advanced computer system."
+              />
+
+              <span class="project-card__toggle-text">
+                View Batcomputer details
+              </span>
             </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                            An advanced computer system for forensic investigations, data analysis and criminal intelligence.
+            <div class="project-card__content">
+              <p class="project-card__description">
+                An advanced computer system for forensic investigations, data
+                analysis and criminal intelligence.
+              </p>
 
-                        </a>
-                        <p></p>
-                        <a>
-                            Focus: Data analysis, cybersecurity, investigative technology. 
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
-        <label ><a class="label__Projects">The Batmobile</a></label>
-<details id="Batmobile" name="Batmobile" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img src = "images/Batmobile.jpg" alt="Batmobile" width="500" height="6000"></span>
-                <span class="visually-hidden">Navigation Menu</span>
+              <p class="project-card__focus">
+                <strong>Focus:</strong>
+                Data analysis, cybersecurity and investigative technology.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <!-- =============================
+                 PROJECT 2: BATMOBILE
+                 ============================= -->
+
+        <article class="project-card">
+          <h3 class="project-card__title">The Batmobile</h3>
+
+          <details class="project-card__details">
+            <summary class="project-card__toggle">
+              <img
+                class="project-card__image"
+                src="images/Batmobile.jpg"
+                alt="The Batmobile, Batman's specialized armored vehicle."
+              />
+
+              <span class="project-card__toggle-text">
+                View Batmobile details
+              </span>
             </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                            A specialized vehicle designed for mobility, protection and rapid emergency response.
-                        </a>
-                        <p></p>
-                        <a>Focus: Mechanical engineering, vehicle technology, system integration.</a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
+            <div class="project-card__content">
+              <p class="project-card__description">
+                A specialized vehicle designed for mobility, protection and
+                rapid emergency response.
+              </p>
 
-        <label ><a class="label__Projects">The Batsuit</a></label>
-<details id="Batsuit" name="Batsuit" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img src = "images/Batsuit.avif" alt="Batmobile" width="500" height="6000"></span>
-                <span class="visually-hidden">Navigation Menu</span>
+              <p class="project-card__focus">
+                <strong>Focus:</strong>
+                Mechanical engineering, vehicle technology and system
+                integration.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <!-- =============================
+                 PROJECT 3: BATSUIT
+                 ============================= -->
+
+        <article class="project-card">
+          <h3 class="project-card__title">The Batsuit</h3>
+
+          <details class="project-card__details">
+            <summary class="project-card__toggle">
+              <img
+                class="project-card__image"
+                src="images/Batsuit.avif"
+                alt="The Batsuit, Batman's protective suit and tactical equipment."
+              />
+
+              <span class="project-card__toggle-text">
+                View Batsuit details
+              </span>
             </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                            An advanced protective suit combining armor, communication systems and specialized tactical equipment.</a>
-                        <p></p>
-                        <a>Focus: Materials engineering, wearable technology, protection.</a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
+            <div class="project-card__content">
+              <p class="project-card__description">
+                An advanced protective suit combining armor, communication
+                systems and specialized tactical equipment.
+              </p>
 
-        <label ><a class="label__Projects">The Batsignal</a></label>
-<details id="Batsignal" name="Batsignal" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img src = "images/Batsignal.jpg" alt="Batmobile" width="500" height="6000"></span>
-                <span class="visually-hidden">Navigation Menu</span>
+              <p class="project-card__focus">
+                <strong>Focus:</strong>
+                Materials engineering, wearable technology and personal
+                protection.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <!-- =============================
+                 PROJECT 4: BAT-SIGNAL
+                 ============================= -->
+
+        <article class="project-card">
+          <h3 class="project-card__title">The Bat-Signal</h3>
+
+          <details class="project-card__details">
+            <summary class="project-card__toggle">
+              <img
+                class="project-card__image"
+                src="images/Batsignal.jpg"
+                alt="The Bat-Signal, a searchlight used to call Batman for assistance."
+              />
+
+              <span class="project-card__toggle-text">
+                View Bat-Signal details
+              </span>
             </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                            A communication system used by Gotham City Police Department to request Batman's assistance.</a>
-                        <p></p>
-                        <a>Focus: Communication, coordination and emergency response.</a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
+            <div class="project-card__content">
+              <p class="project-card__description">
+                A communication system used by the Gotham City Police Department
+                to request Batman's assistance.
+              </p>
 
+              <p class="project-card__focus">
+                <strong>Focus:</strong>
+                Communication, coordination and emergency response.
+              </p>
+            </div>
+          </details>
+        </article>
+      </section>
+    </main>
 
-</main>
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
 
-<footer class="site-footer">
-        <p class="site-footer__text">
-            &copy; 2026 Group 16.
-            Fictional student portfolio for Responsive Web Design.
-        </p>
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        &copy; 2026 Group 16. Fictional student portfolio for Responsive Web
+        Design.
+      </p>
     </footer>
+  </body>
+</html>
