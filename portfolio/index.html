@@ -1,44 +1,203 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-          content="Meet Batman, Gotham City's detective, strategist and protector.">
-    <meta name="author" content="Grupp16">
-    <title>About Batman | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
+      content="Meet Batman, Gotham City's detective, strategist and protector."/>
 
-<body class="page page--home">
+    <title>About Batman | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="page page--home">
+    <!-- Skip navigation -->
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
 
     <!-- Header -->
     <header class="site-header">
-        <p class="site-header__title">
-            Batman Portfolio / Group 16
+      <p class="site-header__title">Batman Portfolio / Group 16</p>
+
+      <!-- Navigation menu -->
+      <details class="menu" data-js-target="menu-panel">
+        <summary
+          class="menu__toggle"
+          data-js-action="dismiss-menu"
+          data-js-target="menu-toggle"
+        >
+          <span aria-hidden="true">☰</span>
+          <span class="visually-hidden"> Toggle navigation menu </span>
+        </summary>
+
+        <nav class="menu__nav" aria-label="Main navigation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--current"
+                href="index.html"
+                aria-current="page"
+              >
+                About Me
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="skills.html"> Skills </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="projects.html"> Projects </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="experience.html">
+                Experience &amp; Education
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="certifications.html">
+                Certifications
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html"> Contact </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="extra.html"> Extra </a>
+            </li>
+          </ul>
+        </nav>
+      </details>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" class="page__main">
+      <!-- Introduction -->
+      <section class="about" aria-labelledby="about-title">
+        <h1 id="about-title" class="about__title">About Batman</h1>
+
+        <p class="about__intro">
+          Detective, strategist and protector of Gotham City.
         </p>
 
-        <details class="menu">
-            <summary class="menu__toggle">
-                <span aria-hidden="true">☰</span>
-                <span class="visually-hidden">
-                    Toggle navigation menu
-                </span>
-            </summary>
+        <figure class="about__figure">
+          <img
+            class="about__image"
+            src="images/about_batman.avif"
+            alt="Batman wearing his dark suit and cowl."
+            width="400"
+            height="400"
+          />
 
-            <nav class="menu__nav" aria-label="Main navigation">
-                <ul class="menu__list">
-                    <li><a href="index.html" aria-current="page">About Me</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="experience.html">Experience &amp; Education</a></li>
-                    <li><a href="certifications.html">Certifications</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="extra.html">Extra</a></li>
-                </ul>
-            </nav>
-        </details>
-    </header>
+          <figcaption class="about__caption">
+            Batman – Gotham City's protector.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Personal background -->
+      <section class="profile" aria-labelledby="profile-title">
+        <h2 id="profile-title" class="profile__title">Who I Am</h2>
+
+        <p class="profile__text">
+          I am Bruce Wayne, also known as Batman. I dedicate my life to
+          protecting Gotham City and helping those who cannot protect
+          themselves.
+        </p>
+
+        <p class="profile__text">
+          My work combines detective skills, strategic planning, advanced
+          technology and physical training.
+        </p>
+      </section>
+
+      <!-- Professional experience overview -->
+      <section class="career" aria-labelledby="career-title">
+        <h2 id="career-title" class="career__title">What I Do</h2>
+
+        <p class="career__intro">
+          My responsibilities focus on protecting the people of Gotham City and
+          solving complex security challenges.
+        </p>
+
+        <ul class="career__list">
+          <li class="career__item">
+            Criminal investigation and detective work
+          </li>
+
+          <li class="career__item">Strategic planning and risk assessment</li>
+
+          <li class="career__item">Security technology and surveillance</li>
+
+          <li class="career__item">Emergency response and crisis management</li>
+        </ul>
+      </section>
+
+      <!-- Professional goals -->
+      <section class="goals" aria-labelledby="goals-title">
+        <h2 id="goals-title" class="goals__title">My Professional Goals</h2>
+
+        <p class="goals__text">
+          My goal is to make Gotham City a safer place through investigation,
+          prevention and collaboration.
+        </p>
+
+        <p class="goals__text">
+          I continuously develop my knowledge of technology, security and
+          leadership to respond to emerging threats.
+        </p>
+      </section>
+
+      <!-- Explore portfolio -->
+      <section class="portfolio-links" aria-labelledby="portfolio-links-title">
+        <h2 id="portfolio-links-title" class="portfolio-links__title">
+          Explore My Portfolio
+        </h2>
+
+        <p class="portfolio-links__intro">
+          Learn more about my qualifications, completed projects and
+          professional background.
+        </p>
+
+        <ul class="portfolio-links__list">
+          <li class="portfolio-links__item">
+            <a class="portfolio-links__link" href="skills.html">
+              View my skills
+            </a>
+          </li>
+
+          <li class="portfolio-links__item">
+            <a class="portfolio-links__link" href="projects.html">
+              Explore my projects
+            </a>
+          </li>
+
+          <li class="portfolio-links__item">
+            <a class="portfolio-links__link" href="experience.html">
+              View my experience and education
+            </a>
+          </li>
+
+          <li class="portfolio-links__item">
+            <a class="portfolio-links__link" href="contact.html">
+              Contact me
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p class="site-footer__text">Batman Portfolio – Group 16</p>
+
+      <p class="site-footer__text">
+        Fictional portfolio created for educational purposes.
+      </p>
+    </footer>
+  </body>
+</html>
