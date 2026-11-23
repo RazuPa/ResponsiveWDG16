@@ -529,16 +529,37 @@ textarea:focus-visible {
    ========================================= */
 
 .menu__toggle__Projects {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #263b52;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(222, 201, 167, 0.14);
     color: #f3dcad;
     border: 1px solid #dec9a7;
-    border-radius: 8px;
-    font-size: 24px;
+    border-radius: 10px;
+    font-size: 34px;
+    line-height: 1;
     cursor: pointer;
+    list-style: none;
+     margin-top: 20px;
+    padding: 8px;
+    margin-bottom:20px;
+    max-width: 100%;
+  height: auto;
+
+}
+
+.resume-section__toggle__projects {
+    padding: 15px;
+    background-color: #263b52;
+    color: #f3dcad;
+    border: 1px solid #74859b;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom:20px;
 }
 
 .menu__list__Projects {
@@ -565,6 +586,7 @@ textarea:focus-visible {
 .img__Projects {
     max-width: 100%;
     height: auto;
+    object-fit:contain;
 }
 
 
