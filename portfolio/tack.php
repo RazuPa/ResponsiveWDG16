@@ -1,4 +1,3 @@
-
 <?php
 /* =========================================
    FORM DATA
@@ -67,7 +66,8 @@ if ($message === "" || mb_strlen($message) > 2000) {
    ========================================= */
 
 /* Escape text before displaying it in HTML. */
-function escape(string $value): string {
+function escape(string $value): string
+{
     return htmlspecialchars(
         $value,
         ENT_QUOTES,
@@ -85,8 +85,7 @@ function escape(string $value): string {
 
     <meta
         name="description"
-        content="Confirmation page for the Batman student portfolio contact form."
-    >
+        content="Confirmation page for the Batman student portfolio contact form.">
 
     <meta name="author" content="Group 16">
 
@@ -118,13 +117,11 @@ function escape(string $value): string {
 
         <details
             class="menu"
-            data-js-action="dismiss-menu"
-        >
+            data-js-action="dismiss-menu">
 
             <summary
                 class="menu__toggle"
-                data-js-target="menu-toggle"
-            >
+                data-js-target="menu-toggle">
                 <span aria-hidden="true">☰</span>
 
                 <span class="visually-hidden">
@@ -135,8 +132,7 @@ function escape(string $value): string {
             <nav
                 class="menu__nav"
                 aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
+                data-js-target="menu-panel">
 
                 <ul class="menu__list">
 
@@ -174,8 +170,7 @@ function escape(string $value): string {
                         <a
                             class="menu__link menu__link--current"
                             href="contact.html"
-                            aria-current="page"
-                        >
+                            aria-current="page">
                             Contact
                         </a>
                     </li>
@@ -198,8 +193,7 @@ function escape(string $value): string {
     <main
         class="page__main"
         id="main-content"
-        tabindex="-1"
-    >
+        tabindex="-1">
 
         <?php if (!empty($errors)): ?>
 
@@ -243,13 +237,11 @@ function escape(string $value): string {
 
             <section
                 class="contact"
-                aria-labelledby="submitted-details-title"
-            >
+                aria-labelledby="submitted-details-title">
 
                 <h2
                     class="contact__heading"
-                    id="submitted-details-title"
-                >
+                    id="submitted-details-title">
                     Your Submitted Details
                 </h2>
 
@@ -311,4 +303,5 @@ function escape(string $value): string {
     </footer>
 
 </body>
+
 </html>

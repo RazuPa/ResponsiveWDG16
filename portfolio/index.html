@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-      content="Meet Batman, Gotham City's detective, strategist and protector."/>
+    <meta
+      name="description"
+      content="Meet Batman, Gotham City's detective, strategist and protector."
+    />
 
-    <title>About Batman | Portfolio</title>
+    <title>About Batman | Batman Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
@@ -15,22 +18,28 @@
     <!-- Skip navigation -->
     <a class="skip-link" href="#main-content"> Skip to main content </a>
 
-    <!-- Header -->
-    <header class="site-header">
-      <p class="site-header__title">Batman Portfolio / Group 16</p>
+    <!-- =====================================
+         HEADER
+         ===================================== -->
 
-      <!-- Navigation menu -->
-      <details class="menu" data-js-target="menu-panel">
-        <summary
-          class="menu__toggle"
-          data-js-action="dismiss-menu"
-          data-js-target="menu-toggle"
-        >
+    <header class="site-header">
+      <p class="site-header__title">Portfolio - Batman</p>
+
+      <!-- JS: Close menu when clicking outside
+             or pressing Escape. Return focus
+             to the toggle when using Escape. -->
+
+      <details class="menu" data-js-action="dismiss-menu">
+        <summary class="menu__toggle" data-js-target="menu-toggle">
           <span aria-hidden="true">☰</span>
-          <span class="visually-hidden"> Toggle navigation menu </span>
+          <span class="visually-hidden"> Navigation menu </span>
         </summary>
 
-        <nav class="menu__nav" aria-label="Main navigation">
+        <nav
+          class="menu__nav"
+          aria-label="Main navigation"
+          data-js-target="menu-panel"
+        >
           <ul class="menu__list">
             <li class="menu__item">
               <a
@@ -74,9 +83,12 @@
       </details>
     </header>
 
-    <!-- Main content -->
-    <main id="main-content" class="page__main">
-      <!-- Introduction -->
+    <!-- =====================================
+         MAIN CONTENT
+         ===================================== -->
+
+    <main id="main-content" class="page__main" tabindex="-1">
+      <!-- ABOUT BATMAN -->
       <section class="about" aria-labelledby="about-title">
         <h1 id="about-title" class="about__title">About Batman</h1>
 
@@ -99,7 +111,10 @@
         </figure>
       </section>
 
-      <!-- Personal background -->
+      <!-- =================================
+             PERSONAL BACKGROUND
+             ================================= -->
+
       <section class="profile" aria-labelledby="profile-title">
         <h2 id="profile-title" class="profile__title">Who I Am</h2>
 
@@ -115,7 +130,10 @@
         </p>
       </section>
 
-      <!-- Professional experience overview -->
+      <!-- =================================
+             PROFESSIONAL EXPERIENCE
+             ================================= -->
+
       <section class="career" aria-labelledby="career-title">
         <h2 id="career-title" class="career__title">What I Do</h2>
 
@@ -137,7 +155,10 @@
         </ul>
       </section>
 
-      <!-- Professional goals -->
+      <!-- =================================
+             PROFESSIONAL GOALS
+             ================================= -->
+
       <section class="goals" aria-labelledby="goals-title">
         <h2 id="goals-title" class="goals__title">My Professional Goals</h2>
 
@@ -152,7 +173,10 @@
         </p>
       </section>
 
-      <!-- Explore portfolio -->
+      <!-- =================================
+             EXPLORE PORTFOLIO
+             ================================= -->
+
       <section class="portfolio-links" aria-labelledby="portfolio-links-title">
         <h2 id="portfolio-links-title" class="portfolio-links__title">
           Explore My Portfolio
@@ -191,12 +215,14 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-      <p class="site-footer__text">Batman Portfolio – Group 16</p>
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
 
+    <footer class="site-footer">
       <p class="site-footer__text">
-        Fictional portfolio created for educational purposes.
+        &copy; 2026 Group 16. Fictional student portfolio for Responsive Web
+        Design.
       </p>
     </footer>
   </body>
