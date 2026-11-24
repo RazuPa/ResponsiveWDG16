@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/GothamC.png");
+  background-image: url("../images/gothamC.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
