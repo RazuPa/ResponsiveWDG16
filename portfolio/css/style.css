@@ -1,10 +1,6 @@
-/* =========================================
-   GEMENSAM DESIGN
-   ========================================= */
 
-* {
-  box-sizing: border-box;
-}
+/* 1. GEMENSAM DESIGN */
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -14,26 +10,18 @@ body {
   line-height: 1.7;
 }
 
-/* Gemensam bakgrund för alla sidor */
-
 .page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/gothamc.png");
+  background-image: url("../images/GothamC.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: #f3dcad;
-}
+img { max-width: 100%; height: auto; }
+a { color: #f3dcad; }
 
 a:focus-visible,
 summary:focus-visible,
@@ -44,8 +32,6 @@ textarea:focus-visible {
   outline: 3px solid #f3dcad;
   outline-offset: 3px;
 }
-
-/* Text för skärmläsare */
 
 .visually-hidden {
   position: absolute;
@@ -60,8 +46,6 @@ textarea:focus-visible {
   border: 0;
 }
 
-/* Hoppa till huvudinnehållet */
-
 .skip-link {
   position: absolute;
   top: -100px;
@@ -72,17 +56,9 @@ textarea:focus-visible {
   color: #172333;
   border-radius: 6px;
 }
+.skip-link:focus { top: 10px; }
 
-.skip-link:focus {
-  top: 10px;
-}
-
-/* =========================================
-   HEADER
-   ========================================= */
-
-/* Batman och menyknappen på samma rad */
-
+/* 2. HEADER OCH MENY */
 .site-header {
   display: flex;
   align-items: center;
@@ -101,20 +77,8 @@ textarea:focus-visible {
   text-align: center;
 }
 
-/* =========================================
-   NAVIGATION
-   ========================================= */
-
-.menu {
-  position: relative;
-  flex-shrink: 0;
-}
-
-.site-header > .menu {
-  order: 1;
-}
-
-/* Hamburgermeny */
+.menu { position: relative; flex-shrink: 0; }
+.site-header > .menu { order: 1; }
 
 .menu__toggle {
   display: flex;
@@ -132,12 +96,7 @@ textarea:focus-visible {
   cursor: pointer;
   list-style: none;
 }
-
-.menu__toggle::-webkit-details-marker {
-  display: none;
-}
-
-/* Utfällbar navigering */
+.menu__toggle::-webkit-details-marker { display: none; }
 
 .menu__nav {
   position: absolute;
@@ -154,15 +113,8 @@ textarea:focus-visible {
   border-radius: 8px;
 }
 
-.menu__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu__item {
-  margin-bottom: 5px;
-}
+.menu__list { margin: 0; padding: 0; list-style: none; }
+.menu__item { margin-bottom: 5px; }
 
 .menu__link {
   display: block;
@@ -171,23 +123,14 @@ textarea:focus-visible {
   text-decoration: none;
   border-radius: 4px;
 }
-
-.menu__link:hover {
-  background-color: #354b64;
-}
-
+.menu__link:hover { background-color: #354b64; }
 .menu__link--current,
 .menu__link--current:hover {
   background-color: #dec9a7;
   color: #172333;
 }
 
-/* =========================================
-   HUVUDINNEHÅLL
-   ========================================= */
-
-/* Standard för alla sidor */
-
+/* 3. MAIN OCH FOOTER */
 .page__main {
   width: 90%;
   max-width: 1000px;
@@ -198,8 +141,7 @@ textarea:focus-visible {
   border-radius: 10px;
 }
 
-/* Mindre innehåll på våra tre sidor */
-
+/* Mindre innehåll bara på dina tre sidor */
 .page--home .page__main,
 .page--experience .page__main,
 .page--contact .page__main {
@@ -213,14 +155,7 @@ textarea:focus-visible {
   font-family: Georgia, serif;
   font-size: 36px;
 }
-
-.page__intro {
-  color: #e0e6ee;
-}
-
-/* =========================================
-   FOOTER
-   ========================================= */
+.page__intro { color: #e0e6ee; }
 
 .site-footer {
   margin-top: auto;
@@ -229,28 +164,18 @@ textarea:focus-visible {
   border-top: 1px solid #74859b;
   text-align: center;
 }
-
 .site-footer__text {
   margin: 5px 0;
   color: #e0e6ee;
   font-size: 14px;
 }
 
-/* =========================================
-   INDEX – ABOUT BATMAN
-   ========================================= */
-
-/* Mellanrum mellan sektionerna */
-
+/* 4. INDEX */
 .page--home .about,
 .page--home .profile,
 .page--home .career,
 .page--home .goals,
-.page--home .portfolio-links {
-  margin-bottom: 35px;
-}
-
-/* Rubriker */
+.page--home .portfolio-links { margin-bottom: 35px; }
 
 .about__title {
   color: #fff7e8;
@@ -261,65 +186,29 @@ textarea:focus-visible {
 .profile__title,
 .career__title,
 .goals__title,
-.portfolio-links__title {
-  color: #f3dcad;
-  font-size: 22px;
-}
-
-/* Text */
+.portfolio-links__title { color: #f3dcad; font-size: 22px; }
 
 .about__intro,
 .profile__text,
 .career__intro,
 .goals__text,
-.portfolio-links__intro {
-  max-width: 650px;
-  color: #e0e6ee;
-}
+.portfolio-links__intro { max-width: 650px; color: #e0e6ee; }
 
-/* Batman-bild */
-
-.about__figure {
-  max-width: 400px;
-  margin: 25px auto;
-}
-
+.about__figure { max-width: 400px; margin: 25px auto; }
 .about__image {
   width: 100%;
   border: 1px solid #74859b;
   border-radius: 8px;
 }
-
-.about__caption {
-  margin-top: 10px;
-  color: #f3dcad;
-  text-align: center;
-}
-
-/* Listor */
-
+.about__caption { margin-top: 10px; color: #f3dcad; text-align: center; }
 .career__list,
-.portfolio-links__list {
-  padding-left: 25px;
-}
-
+.portfolio-links__list { padding-left: 25px; }
 .career__item,
-.portfolio-links__item {
-  margin-bottom: 10px;
-}
+.portfolio-links__item { margin-bottom: 10px; }
+.portfolio-links__link { color: #f3dcad; }
 
-.portfolio-links__link {
-  color: #f3dcad;
-}
-
-/* =========================================
-   EXPERIENCE AND EDUCATION
-   ========================================= */
-
-.resume-section {
-  margin-bottom: 20px;
-}
-
+/* 5. EXPERIENCE */
+.resume-section { margin-bottom: 20px; }
 .resume-section__toggle {
   padding: 15px;
   background-color: #263b52;
@@ -328,106 +217,47 @@ textarea:focus-visible {
   border-radius: 6px;
   cursor: pointer;
 }
+.resume-section__heading { display: inline; font-size: 22px; }
+.resume-section__content { padding: 15px; }
 
-.resume-section__heading {
-  display: inline;
-  font-size: 22px;
-}
-
-/* Behålls för andra befintliga HTML-strukturer */
-
-.resume-section__content {
-  padding: 15px;
-}
-
-/* Experience utan div-containers */
-
-.page--experience .resume-section > article {
-  margin: 15px 15px 0;
-}
-
-.page--experience .resume-section > article:last-of-type {
-  margin-bottom: 15px;
-}
-
-/* Erfarenhet och utbildning */
+.page--experience .resume-section > article { margin: 15px 15px 0; }
+.page--experience .resume-section > article:last-of-type { margin-bottom: 15px; }
 
 .experience__item,
 .education__item {
   padding: 20px 0;
   border-bottom: 1px solid #74859b;
 }
-
 .experience__title,
-.education__title {
-  color: #f4f6fa;
-  font-size: 20px;
-}
-
+.education__title { color: #f4f6fa; font-size: 20px; }
 .experience__date,
-.education__date {
-  color: #f3dcad;
-  font-size: 14px;
-}
-
+.education__date { color: #f3dcad; font-size: 14px; }
 .experience__list,
-.education__list {
-  padding-left: 25px;
-}
-
+.education__list { padding-left: 25px; }
 .experience__list-item,
-.education__list-item {
-  margin-bottom: 8px;
-}
+.education__list-item { margin-bottom: 8px; }
+.education__text { color: #e0e6ee; }
 
-.education__text {
-  color: #e0e6ee;
-}
-
-/* =========================================
-   CONTACT
-   ========================================= */
-
-.contact {
-  margin-bottom: 35px;
-}
-
+/* 6. CONTACT OCH PHP */
+.contact { margin-bottom: 35px; }
 .contact__heading {
   color: #f3dcad;
   font-size: 22px;
   border-bottom: 1px solid #74859b;
 }
-
-.contact__details {
-  font-style: normal;
-}
-
+.contact__details { font-style: normal; }
 .contact__text,
 .contact__note,
-.contact__help {
-  color: #e0e6ee;
-}
-
-.contact__link {
-  color: #f3dcad;
-}
-
-/* Formulär */
-
-.contact__form {
-  max-width: 650px;
-}
-
-.contact__field {
-  margin-bottom: 20px;
-}
+.contact__help { color: #e0e6ee; }
+.contact__link { color: #f3dcad; }
+.contact__form { max-width: 650px; }
+.contact__field { margin-bottom: 20px; }
 
 .contact__label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-
 .contact__input {
   display: block;
   width: 100%;
@@ -438,32 +268,15 @@ textarea:focus-visible {
   border-radius: 6px;
   font: inherit;
 }
-
-.contact__input--message {
-  resize: vertical;
-}
-
+.contact__input--message { resize: vertical; }
 .contact__counter,
 .contact__help,
-.contact__note {
-  font-size: 14px;
-}
+.contact__note { font-size: 14px; }
 
-/* Stöd om formuläret saknar div-containers */
-
-.contact__form > .contact__input {
-  margin-bottom: 20px;
-}
-
-.contact__form > .contact__input--message {
-  margin-bottom: 0;
-}
-
-.contact__form > .contact__counter {
-  margin: 5px 0 20px;
-}
-
-/* Radioknappar */
+/* Fungerar även om contact__field tas bort senare */
+.contact__form > .contact__input { margin-bottom: 20px; }
+.contact__form > .contact__input--message { margin-bottom: 0; }
+.contact__form > .contact__counter { margin: 5px 0 20px; }
 
 .contact__options {
   margin-bottom: 20px;
@@ -471,36 +284,20 @@ textarea:focus-visible {
   border: 1px solid #8797aa;
   border-radius: 6px;
 }
-
-.contact__legend {
-  font-weight: bold;
-}
-
+.contact__legend { font-weight: bold; }
 .contact__option {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
-
-.contact__radio {
-  accent-color: #dec9a7;
-}
-
-.contact__option-label {
-  cursor: pointer;
-}
-
-.contact__options > .contact__radio {
-  margin: 10px 5px 10px 0;
-}
-
+.contact__radio { accent-color: #dec9a7; }
+.contact__option-label { cursor: pointer; }
+.contact__options > .contact__radio { margin: 10px 5px 10px 0; }
 .contact__options > .contact__option-label {
   display: inline-block;
   margin-right: 20px;
 }
-
-/* Skicka-knapp */
 
 .contact__submit {
   padding: 12px 24px;
@@ -512,95 +309,36 @@ textarea:focus-visible {
   font-weight: bold;
   cursor: pointer;
 }
+.contact__submit:hover { background-color: #ecdbbf; }
+.contact__errors { color: #f4f6fa; }
+.contact__error { margin-bottom: 8px; }
+.contact__text--message { white-space: pre-wrap; }
 
-.contact__submit:hover {
-  background-color: #ecdbbf;
-}
-
-/* PHP-svar */
-
-.contact__errors {
-  color: #f4f6fa;
-}
-
-.contact__error {
-  margin-bottom: 8px;
-}
-
-.contact__text--message {
-  white-space: pre-wrap;
-}
-
-/* =========================================
-   SKILLS – BEFINTLIG CSS
-   ========================================= */
-
-.skills-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.skills-table__caption {
-  padding: 12px;
-  color: #f3dcad;
-}
-
+/* 7. SKILLS - BEFINTLIGA VÄRDEN */
+.skills-table { width: 100%; border-collapse: collapse; }
+.skills-table__caption { padding: 12px; color: #f3dcad; }
 .skills-table__heading,
 .skills-table__cell {
   padding: 12px;
   border: 1px solid #74859b;
   text-align: left;
 }
-
 .skills-table__heading {
   background-color: #263b52;
   color: #f3dcad;
 }
 
-/* =========================================
-   CERTIFICATIONS – BEFINTLIG CSS
-   ========================================= */
-
-.certifications {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
+/* 8. CERTIFICATIONS - BEFINTLIGA VÄRDEN */
+.certifications { max-width: 800px; margin: 0 auto; }
 .certifications__heading,
-.certifications__title {
-  color: #f3dcad;
-}
+.certifications__title { color: #f3dcad; }
+.certifications__heading { font-size: 22px; }
+.certifications__title { font-size: 20px; }
+.certifications__description { max-width: 650px; color: #e0e6ee; }
 
-.certifications__heading {
-  font-size: 22px;
-}
-
-.certifications__title {
-  font-size: 20px;
-}
-
-.certifications__description {
-  max-width: 650px;
-  color: #e0e6ee;
-}
-
-/* =========================================
-   PROJECTS – BEFINTLIG CSS
-   ========================================= */
-
-.projects {
-  display: grid;
-  gap: 24px;
-}
-
-.projects__heading {
-  margin: 0;
-  color: #f3dcad;
-  font-size: 24px;
-}
-
-/* Projektkort */
-
+/* 9. PROJECTS - BEFINTLIGA VÄRDEN */
+.projects { display: grid; gap: 24px; }
+.projects__heading { margin: 0; color: #f3dcad; font-size: 24px; }
 .project-card {
   min-width: 0;
   padding: 20px;
@@ -608,20 +346,13 @@ textarea:focus-visible {
   border: 1px solid #74859b;
   border-radius: 10px;
 }
-
 .project-card__title {
   margin: 0 0 15px;
   color: #f3dcad;
   font-family: Georgia, serif;
   font-size: 24px;
 }
-
-/* Details och summary */
-
-.project-card__details {
-  width: 100%;
-}
-
+.project-card__details { width: 100%; }
 .project-card__toggle {
   display: block;
   padding: 15px;
@@ -631,26 +362,13 @@ textarea:focus-visible {
   cursor: pointer;
   list-style: none;
 }
-
-.project-card__toggle::-webkit-details-marker {
-  display: none;
-}
-
-.project-card__toggle::marker {
-  content: "";
-}
-
-.project-card__toggle:hover {
-  background-color: #354b64;
-}
-
+.project-card__toggle::-webkit-details-marker { display: none; }
+.project-card__toggle::marker { content: ""; }
+.project-card__toggle:hover { background-color: #354b64; }
 .project-card__toggle:focus-visible {
   outline: 3px solid #f3dcad;
   outline-offset: 4px;
 }
-
-/* Projektbilder */
-
 .project-card__image {
   display: block;
   width: 100%;
@@ -661,9 +379,6 @@ textarea:focus-visible {
   object-fit: contain;
   border-radius: 6px;
 }
-
-/* Klicktext */
-
 .project-card__toggle-text {
   display: block;
   margin-top: 15px;
@@ -672,13 +387,9 @@ textarea:focus-visible {
   font-weight: bold;
   text-align: center;
 }
-
 .project-card__details[open] .project-card__toggle {
   border-radius: 8px 8px 0 0;
 }
-
-/* Projektbeskrivningar */
-
 .project-card__content {
   padding: 20px;
   background-color: #0f1d2f;
@@ -686,25 +397,11 @@ textarea:focus-visible {
   border-top: 0;
   border-radius: 0 0 8px 8px;
 }
+.project-card__description { margin: 0 0 15px; color: #e0e6ee; }
+.project-card__focus { margin: 0; color: #e0e6ee; }
+.project-card__focus strong { color: #f3dcad; }
 
-.project-card__description {
-  margin: 0 0 15px;
-  color: #e0e6ee;
-}
-
-.project-card__focus {
-  margin: 0;
-  color: #e0e6ee;
-}
-
-.project-card__focus strong {
-  color: #f3dcad;
-}
-
-/* =========================================
-   EXTRA – BEFINTLIG CSS
-   ========================================= */
-
+/* 10. EXTRA - BEFINTLIGA VÄRDEN */
 .menu__toggle__Projects {
   display: flex;
   align-items: center;
@@ -723,7 +420,6 @@ textarea:focus-visible {
   cursor: pointer;
   list-style: none;
 }
-
 .resume-section__toggle__projects {
   margin-bottom: 20px;
   padding: 15px;
@@ -733,16 +429,8 @@ textarea:focus-visible {
   border-radius: 6px;
   cursor: pointer;
 }
-
-.menu__list__Projects {
-  padding: 0;
-  list-style: none;
-}
-
-.menu__item__Projects {
-  width: 100%;
-}
-
+.menu__list__Projects { padding: 0; list-style: none; }
+.menu__item__Projects { width: 100%; }
 .menu__nav__Projects {
   max-width: 100%;
   padding: 15px;
@@ -750,121 +438,45 @@ textarea:focus-visible {
   border: 1px solid #74859b;
   border-radius: 8px;
 }
-
-.label__Projects {
-  font-size: 24px;
-}
-
+.label__Projects { font-size: 24px; }
 .img__Projects {
   max-width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN
-   ========================================= */
-
+/* 11. MOBILANPASSNING */
 @media (max-width: 600px) {
-  /* Gemensam mobilanpassning */
-
-  .page {
-    background-attachment: scroll;
-  }
-
-  .site-header {
-    padding: 8px 12px;
-  }
-
-  .site-header__title {
-    font-size: 20px;
-  }
-
-  .menu__nav {
-    width: 280px;
-    max-width: 90vw;
-  }
-
-  .page__main {
-    width: 95%;
-    padding: 20px;
-  }
-
-  /* Våra tre sidor */
+  .page { background-attachment: scroll; }
+  .site-header { padding: 8px 12px; }
+  .site-header__title { font-size: 20px; }
+  .menu__nav { width: 280px; max-width: 90vw; }
+  .page__main { width: 95%; padding: 20px; }
 
   .page--home .page__main,
   .page--experience .page__main,
-  .page--contact .page__main {
-    padding: 18px;
-  }
+  .page--contact .page__main { padding: 18px; }
 
   .page__title,
-  .about__title {
-    font-size: 28px;
-  }
-
-  .about__figure {
-    max-width: 100%;
-  }
-
-  .resume-section__heading {
-    font-size: 20px;
-  }
-
+  .about__title { font-size: 28px; }
+  .about__figure { max-width: 100%; }
+  .resume-section__heading { font-size: 20px; }
   .experience__title,
-  .education__title {
-    font-size: 18px;
-  }
+  .education__title { font-size: 18px; }
 
-  /* Projects – befintlig CSS */
-
-  .projects {
-    gap: 16px;
-  }
-
-  .projects__heading {
-    font-size: 22px;
-  }
-
-  .project-card {
-    padding: 12px;
-  }
-
-  .project-card__title {
-    font-size: 21px;
-  }
-
-  .project-card__toggle {
-    padding: 10px;
-  }
-
-  .project-card__image {
-    max-height: 250px;
-  }
-
-  .project-card__content {
-    padding: 15px;
-  }
-
-  .project-card__toggle-text {
-    font-size: 14px;
-  }
-
-  /* Skills – tabell */
+  .projects { gap: 16px; }
+  .projects__heading { font-size: 22px; }
+  .project-card { padding: 12px; }
+  .project-card__title { font-size: 21px; }
+  .project-card__toggle { padding: 10px; }
+  .project-card__image { max-height: 250px; }
+  .project-card__content { padding: 15px; }
+  .project-card__toggle-text { font-size: 14px; }
 
   .skills-table__heading,
-  .skills-table__cell {
-    padding: 8px;
-    overflow-wrap: anywhere;
-  }
+  .skills-table__cell { padding: 8px; overflow-wrap: anywhere; }
 }
 
-/* =========================================
-   REDUCED MOTION
-   ========================================= */
-
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  html { scroll-behavior: auto; }
 }
