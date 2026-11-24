@@ -1,290 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Batman's fictional projects.">
-    <title>Projects | Batman Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Batman's fictional bases of operation, organizations and affiliations."/>
+    <meta name="author" content="Group 16" />
 
-<body class="page page--experience">
-    <a class="skip-link" href="#main-content">
-            Skip to main content
-        </a>
+    <title>Extra | Batman Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body class="page page--extra">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
 
     <header class="site-header">
-        <p class="site-header__title">
-            Batman
-        </p>
+      <p class="site-header__title">Portfolio - Batman</p>
 
-        <details class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true">☰</span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+      <!-- JS: Close the menu when clicking outside
+             or pressing Escape. -->
+      <details class="menu" data-js-action="dismiss-menu">
+        <summary class="menu__toggle" data-js-target="menu-toggle">
+          <span aria-hidden="true">☰</span>
+          <span class="visually-hidden">Navigation menu</span>
+        </summary>
 
-            <nav
-                class="menu__nav"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">
-                            About Me
-                        </a>
-                    </li>
+        <nav
+          class="menu__nav"
+          aria-label="Main navigation"
+          data-js-target="menu-panel"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html"> About Me </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="skills.html">
-                            Skills
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="skills.html"> Skills </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="projects.html"
-                        
-                        >
-                            Projects
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="projects.html"> Projects </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a
-                            class="menu__link"
-                            href="experience.html"
-                            
-                        >
-                            Experience and Education
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="experience.html">
+                Experience and Education
+              </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="certifications.html">
-                            Certifications
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="certifications.html">
+                Certifications
+              </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link" href="contact.html">
-                            Contact
-                        </a>
-                    </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contact.html"> Contact </a>
+            </li>
 
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--current" href="extra.html" aria-current="page">
-                            Extra
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </details>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--current"
+                href="extra.html"
+                aria-current="page"
+              >
+                Extra
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </details>
     </header>
- 
-<main class="page__main" id="main-content">
-        
-    <h1 class="page__title">Extras</h1>
 
-        <p class="page__intro">
-            Here are a few other details that could not fit in the other pages:
-        </p>
+    <main class="page__main" id="main-content" tabindex="-1">
+      <h1 class="page__title">Extras</h1>
 
- <details class="resume-section" >
-            <summary class="resume-section__toggle__projects">
-                <h2 class="resume-section__heading">Bases of operation</h2>
-            </summary>
-            <label ><a class="label__Projects">The Batcave</a></label>
-<details id="Batcave" name="Batcave" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/Batcave.webp" alt="Batcave"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+      <p class="page__intro">
+        Here are a few other details that could not fit into the other pages.
+      </p>
 
+      <!-- BASES OF OPERATION -->
+      <!-- HTML details and summary allow sections
+             to expand and collapse without JavaScript. -->
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                            The primary base of operations of the Batman
+      <details class="resume-section">
+        <summary class="resume-section__toggle">
+          <h2 class="resume-section__heading">Bases of Operation</h2>
+        </summary>
 
+        <!-- The Batcave -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">The Batcave</h3>
+          </summary>
 
-                        </a>
-                        <p></p>
-                        
-                            Here lies the Batcomputer, the Batmobile, the Batsuit and other tools for his neverending battle against crime
-                    </li>
-                </ul>
-            </nav>
-        </details>
-        <label ><a class="label__Projects">Gotham city</a></label>
-<details id="Gotham_city" name="Gotham_city" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/Gotham.jpg" alt="Gotham_city"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
-           
+          <img
+            class="extra-item__image"
+            src="images/Batcave.webp"
+            alt="Batman's underground Batcave"
+          />
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        <a>
-                        The operating area of the Batman
-                        </a>
-                        <p></p>
-                        
-                            The city that the Batman regularly patrols and protects.
-                            The Batsymbol is often used by comissioner Gordon and others in Gothan PD to call for the Batman's help.
-                           
-                    </li>
-                </ul>
-            </nav>
+          <p class="extra-item__text">
+            The primary base of operations for Batman.
+          </p>
+
+          <p class="extra-item__text">
+            The Batcave contains the Batcomputer, Batmobile, Batsuit and other
+            tools used in his battle against crime.
+          </p>
         </details>
 
-</details>
+        <!-- Gotham City -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">Gotham City</h3>
+          </summary>
 
-<details class="resume-section" >
-            <summary class="resume-section__toggle__projects">
-                <h2 class="resume-section__heading">Organizations</h2>
-            </summary>
-            
-            <label ><a class="label__Projects">Wayne Enterprises</a></label>
+          <img
+            class="extra-item__image"
+            src="images/Gotham.jpg"
+            alt="Gotham City"
+          />
 
-            <details id="WayneE" name="WayneE" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/Wayne_Enterprises.webp" alt="Wayne_Enterprises"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+          <p class="extra-item__text">
+            Gotham City is Batman's primary area of operation.
+          </p>
 
-
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        
-                        Originally just a front for the Batman, but was eventually used to help others in a more philanthropic way
-                         </li>
-                </ul>
-            </nav>
+          <p class="extra-item__text">
+            Batman regularly patrols and protects the city. Commissioner Gordon
+            and the Gotham City Police Department use the Bat-Signal to request
+            his assistance.
+          </p>
         </details>
-        <label ><a class="label__Projects">The Outsiders</a></label>
+      </details>
 
-            <details id="Outsiders" name="Outsiders" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/Outsiders.jpg" alt="Outsiders"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+      <!-- ORGANIZATIONS -->
 
+      <details class="resume-section">
+        <summary class="resume-section__toggle">
+          <h2 class="resume-section__heading">Organizations</h2>
+        </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        
-                         A group of superheroes created by Batman to protect the Justice League from culpability
-                    </li>
-                </ul>
-            </nav>
+        <!-- Wayne Enterprises -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">Wayne Enterprises</h3>
+          </summary>
+
+          <img
+            class="extra-item__image"
+            src="images/Wayne_Enterprises.webp"
+            alt="Wayne Enterprises"
+          />
+
+          <p class="extra-item__text">
+            Wayne Enterprises was originally used to support Batman's
+            activities.
+          </p>
+
+          <p class="extra-item__text">
+            The organization later became an important part of Bruce Wayne's
+            philanthropic work, supporting technological innovation and helping
+            the citizens of Gotham City.
+          </p>
         </details>
-</details>
 
-<details class="resume-section" >
-            <summary class="resume-section__toggle__projects">
-                <h2 class="resume-section__heading">Afilliations</h2>
-            </summary>
-             <label ><a class="label__Projects">Justice League</a></label>
+        <!-- The Outsiders -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">The Outsiders</h3>
+          </summary>
 
-            <details id="Jl" name="Jl" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/JusticeLeague.jpg" alt="JusticeLeague"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+          <img
+            class="extra-item__image"
+            src="images/Outsiders.jpg"
+            alt="The Outsiders superhero team"
+          />
 
+          <p class="extra-item__text">
+            The Outsiders are a group of superheroes created by Batman.
+          </p>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        
-                        A group of superheroes formed to help against catastrophic threats
-                        <p></p>
-                        
-                        The Batman is part of the original members, consisting of: 
-                        Superman, Wonderwoman, The Flash, Green Lantern, Aquaman and Martian Manhunter. 
-                    </li>
-                </ul>
-            </nav>
+          <p class="extra-item__text">
+            The team operates independently, allowing its members to respond to
+            threats without directly involving the Justice League.
+          </p>
         </details>
-        <label ><a class="label__Projects">Bat-Family</a></label>
+      </details>
 
-            <details id="Batfamily" name="Batfamily" class="menu" data-js-action="dismiss-menu">
-            <summary
-                class="menu__toggle__Projects"
-                data-js-target="menu-toggle"
-            >
-                <span aria-hidden="true"><img class="img__Projects" src = "images/BatFamily.webp" alt="Batfamily"></span>
-                <span class="visually-hidden">Navigation Menu</span>
-            </summary>
+      <!-- AFFILIATIONS -->
 
+      <details class="resume-section">
+        <summary class="resume-section__toggle">
+          <h2 class="resume-section__heading">Affiliations</h2>
+        </summary>
 
-            <nav
-                class="menu__nav__Projects"
-                aria-label="Main navigation"
-                data-js-target="menu-panel"
-            >
-                <ul class="menu__list__Projects">
-                    <li class="menu__item__Projects">
-                        
-                            Batman's inner circle of friends and family, those that support him the most.
-                        <p></p>
-                        
-                            This group includes: All of his adopted children, the Gordons, the Foxs and his adopted father and bulter Alfred Pennyworth.
-                    </li>
-                </ul>
-            </nav>
+        <!-- Justice League -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">Justice League</h3>
+          </summary>
+
+          <img
+            class="extra-item__image"
+            src="images/JusticeLeague.jpg"
+            alt="Members of the Justice League"
+          />
+
+          <p class="extra-item__text">
+            The Justice League is a group of superheroes formed to protect the
+            world against catastrophic threats.
+          </p>
+
+          <p class="extra-item__text">
+            Batman is one of its original members, alongside Superman, Wonder
+            Woman, The Flash, Green Lantern, Aquaman and Martian Manhunter.
+          </p>
         </details>
-</details>
-</main>
 
-<footer class="site-footer">
-        <p class="site-footer__text">
-            &copy; 2026 Group 16.
-            Fictional student portfolio for Responsive Web Design.
-        
+        <!-- Bat-Family -->
+        <details class="extra-item">
+          <summary class="extra-item__toggle">
+            <h3 class="extra-item__title">Bat-Family</h3>
+          </summary>
+
+          <img
+            class="extra-item__image"
+            src="images/BatFamily.webp"
+            alt="Members of Batman's Bat-Family"
+          />
+
+          <p class="extra-item__text">
+            The Bat-Family consists of Batman's closest friends, family members
+            and trusted allies.
+          </p>
+
+          <p class="extra-item__text">
+            The group includes his adopted children, members of the Gordon and
+            Fox families, and his trusted butler and father figure, Alfred
+            Pennyworth.
+          </p>
+        </details>
+      </details>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        &copy; 2026 Group 16. Fictional student portfolio for Responsive Web
+        Design.
+      </p>
     </footer>
+  </body>
+</html>
