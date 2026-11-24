@@ -166,7 +166,7 @@ textarea:focus-visible {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/gothamC.png");
+  background-image: url("../images/gothamc.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
