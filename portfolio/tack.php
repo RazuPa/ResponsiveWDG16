@@ -45,15 +45,12 @@ $message = $_POST["message"] ?? "";
                         <a class="menu__link" href="index.html">About Me</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="skills.html">Skills</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="menu__item">
                         <a class="menu__link" href="experience.html">
                             Experience and Education
                         </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="skills.html">Skills</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="certifications.html">
@@ -61,13 +58,16 @@ $message = $_POST["message"] ?? "";
                         </a>
                     </li>
                     <li class="menu__item">
+                        <a class="menu__link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="extra.html">Extra</a>
+                    </li>
+                    <li class="menu__item">
                         <a class="menu__link menu__link--current"
                            href="contact.html" aria-current="page">
                             Contact
                         </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="extra.html">Extra</a>
                     </li>
                 </ul>
             </nav>
